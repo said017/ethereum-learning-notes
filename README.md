@@ -5,5 +5,5 @@ _These repo are meant to be Proof of my knowledge about Ethereum network, Solidi
 - [Ethereum Whitepaper Notes](https://github.com/said017/ethereum-learning-notes/blob/main/01-ethereum-whitepaper-notes.md)  
   - Learn about the history of blockchain, the background behind Ethereum, main objective of Ethereum, Blockchain general key concepts (Proof-of-Work, State Transition System, Mining, Merkle Trees). Then go to Ethereum Architecture (Ethereum accounts, messages and transactions for EOA and contract, Ethereum State Transition System, Code execution, Ethereum mining), Appilication that can run on Ethereum. Modified GHOST implementation, the fees design, currency and issuance and scalability problem.
   
-  - [Ethereum Yellowpaper Notes](https://github.com/said017/ethereum-learning-notes/blob/main/02-ethereum-yellowpaper-notes.md)  
-   - Onprogress...
+- [Ethereum Yellowpaper Notes](https://github.com/said017/ethereum-learning-notes/blob/main/02-ethereum-yellowpaper-notes.md)  
+  - Onprogress...
