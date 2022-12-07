@@ -108,3 +108,57 @@ The block is collection of relevant piece information, block header, transaction
 - ******nonce:****** A 64-bit value which, combined with the **mixHash**, proves that a sufficient amount of computation has beeen carried out on this block.
 
 **************************************Transaction Receipt**************************************
+
+The transaction receipt, R, is a tuple of five items comprising: the type of the transaction, Rx, the status code of the transaction, Rz, the cumulative gas used in the block containing the transaction receipt as of immediately after the transaction has happened, Ru, the set of logs created through execution of the transaction, Rl and the Bloom filter composed from information in those logs, Rb.
+
+## Transaction Execution
+
+The execution of a transaction is the most complex part of the Ethereum protocol: it defines the state transition function Υ. It is assumed that any transactions executed first pass the initial tests of intrinsic validity. These include:
+
+1. The transaction is well-formed RLP, with no additional trailing bytes;
+2. the transaction signature is valid;
+3. the transaction nonce is valid (equivalent to the sender account’s current nonce);
+4. the sender account has no contract code deployed (see EIP-3607)
+5. the gas limit is no smaller than the intrinsic gas, gn, used by transaction; and
+6. the sender account balance contains at least the cost, v0, required in up-front payment.
+
+two types of txns:
+
+- to ≠ 0; message call txn
+    - gas cost : 21k + gascost(calldata)
+- to = 0; contract creation txn
+    - gas cost : 21k + 32k = 53k
+
+`debug_traceTransaction` → JSON
+
+- brownie, hardhat RETURN, REVERT
+    - return value
+- supported by:
+    - supported by:
+        - ganache → truffle, brownie
+        - hardhat-network → hardhat, …, brownie
+        - geth
+        - INFURA - even with paid plan not supported
+        - `mainnetforking`
+
+## Contract Creation
+
+There are a number of intrinsic parameters used when creating an account: sender (s), original transactor4 (o), available gas (g), gas price (p), endowment (v) together with an arbitrary length byte array, i, the initialisation EVM code, the present depth of the message-call/contractcreation stack (e), the salt for new account’s address (ζ) and finally the permission to make modifications to the state (w). 
+
+STATE VARIABLE INITIALIZABLE = e
+
+CONSTRUCTOR = f
+
+CONTRACT = g
+
+e . f . CODECOPY RETURN . g
+
+### how does a contract get created?
+
+1. you need some `data` / `init` to 0, and that become `code`
+
+disadvantage: cannot have a contstructor
+
+1. you send deployment script, and the `return` value of the script become `code`
+
+always check [ethervm.io](http://ethervm.io) for referencing OPCODE
