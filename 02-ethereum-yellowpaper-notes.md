@@ -162,3 +162,86 @@ disadvantage: cannot have a contstructor
 1. you send deployment script, and the `return` value of the script become `code`
 
 always check [ethervm.io](http://ethervm.io) for referencing OPCODE
+
+## Message Call
+
+In the case of executing a message call, several parameters are required: sender (s), transaction originator (o), recipient (r), the account whose code is to be executed (c, usually the same as recipient), available gas (g), value (v) and gas price (p) together with an arbitrary length byte array, d, the input data of the call, the present depth of the message-call/contract-creation stack (e) and finally the permission to make modifications to the state (w).
+
+[https://github.com/runtimeverification/evm-semantics](https://github.com/runtimeverification/evm-semantics)
+
+## Execution Model
+
+The execution model specifies how the system state is altered given a series of bytecode instructions and a small tuple of environmental data. This is specified through a  formal model of a virtual state machine, known as the Ethereum Virtual Machine (EVM). It is a quasi-Turing complete machine; the quasi qualification comes from the fact that the computation is intrinsically bounded through a parameter, gas, which limits the total amount of computation done.
+
+## Appendix G. Fee Schedule
+
+The fee schedule G is a tuple of scalar values corresponding to the relative costs, in gas, of a number of abstract operations that a transaction may effect.
+
+![image](https://user-images.githubusercontent.com/19762585/206855449-bf1233e4-b58c-4968-8f03-5857ab32c0f5.png)
+
+## Appendix H. Virtual Machine Specification
+
+### H.1 Gas Cost
+
+![image](https://user-images.githubusercontent.com/19762585/206855480-be935849-a776-465c-a8f2-05dfafb989d4.png)
+
+### H.2 Instruction Set
+
+**0s: Stop and Arithmetic Operations**
+
+![image](https://user-images.githubusercontent.com/19762585/206855503-093fcbc6-afdb-4886-b0dd-445b0282db7c.png)
+
+**10s: Comparison & Bitwise Logic Operations**
+
+![image](https://user-images.githubusercontent.com/19762585/206855535-0c6d9cb5-8d20-47b7-9296-75b2006be1d1.png)
+
+**20s: KECCAK256**
+
+![image](https://user-images.githubusercontent.com/19762585/206855559-9ab7183d-7a8f-4dd4-aea8-14f0611bfb33.png)
+
+**30s: Environmental Information**
+
+![image](https://user-images.githubusercontent.com/19762585/206855585-8b0e1150-52de-4c31-a5ec-4b159c17866d.png)
+![image](https://user-images.githubusercontent.com/19762585/206855601-f29de395-221a-4cb6-92af-74ef08a88287.png)
+
+**40s: Block Information**
+
+![image](https://user-images.githubusercontent.com/19762585/206855622-188c5b11-6955-4124-ab38-3690c53a22f9.png)
+
+**50s: Stack, Memory, Storage and Flow Operations**
+
+![image](https://user-images.githubusercontent.com/19762585/206855648-104d8363-54b2-4238-89ad-51db9e280c6b.png)
+![image](https://user-images.githubusercontent.com/19762585/206855668-cda09c04-30b4-4781-ba9d-d7dd65a59932.png)
+
+**60s & 70s: Push Operations**
+
+![image](https://user-images.githubusercontent.com/19762585/206855702-837fe9ae-7df3-477c-a9a9-1aed9fae5431.png)
+
+**80s: Duplication Operations**
+
+![image](https://user-images.githubusercontent.com/19762585/206855718-ecd538ad-4395-4d8b-96b5-6829542fa7b4.png)
+
+**90s: Exchange Operation**
+
+![image](https://user-images.githubusercontent.com/19762585/206855739-9752a1dd-81c3-454d-9dd3-9faa2bdf681e.png)
+
+**a0s: Logging Operations**
+
+![image](https://user-images.githubusercontent.com/19762585/206855781-4cd518c5-a837-49c7-9a2a-46e7de1b79b8.png)
+
+**f0s: System operations**
+
+![image](https://user-images.githubusercontent.com/19762585/206855814-87b05ac7-1a4d-4c2c-9796-0cea42d2d8cf.png)
+![image](https://user-images.githubusercontent.com/19762585/206855828-13b1966d-5d13-40b9-b033-f239846efac6.png)
+
+
+
+
+
+
+
+
+
+
+
+
