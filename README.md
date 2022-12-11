@@ -9,4 +9,4 @@ _These repo are meant to be Proof of my knowledge about Ethereum network, Solidi
   - Learn about blockchain paradigm (mining, protocols etc.), Blocks, State and Transactions, Transaction Execution, Contract Creation, Message Call, Execution Model, Fee Schedule, Virtual Machine Specification.
 
 - [Mastering Ethereum Book](https://github.com/ethereumbook/ethereumbook)
-  - If you already read whitepaper and yellowpaper, the first three chapter only reviewing knowledge you already have, chapter 4 and 5 teach about cryptography tools used in ethereum, how to derive private & public key, and chapter 5 learn about wallets technology (nondeterministic, deterministic, best practices).
+  - If you already read whitepaper and yellowpaper, the first three chapter only reviewing knowledge you already have, chapter 4 and 5 teach about cryptography tools used in ethereum, how to derive private & public key, and learn about wallets technology (nondeterministic, deterministic, best practices).
