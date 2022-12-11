@@ -20,3 +20,21 @@ console.log("Keccak hash of pubKey :", hash);
 
 let ethereumAddress = hash.substr(-40);
 console.log("Ethereum Address :", ethereumAddress);
+
+function toChecksumAddress(address) {
+  address = address.toLowerCase().replace("0x", "");
+  var hash = sha3.keccak256(address);
+  var ret = "0x";
+
+  for (var i = 0; i < address.length; i++) {
+    if (parseInt(hash[i], 16) >= 8) {
+      ret += address[i].toUpperCase();
+    } else {
+      ret += address[i];
+    }
+  }
+
+  return ret;
+}
+
+console.log("checkSum result (EIP-55) :", toChecksumAddress(ethereumAddress));
