@@ -10,4 +10,4 @@ _These repo are meant to be Proof of my knowledge about Ethereum network, Solidi
 
 - [Mastering Ethereum Book](https://github.com/ethereumbook/ethereumbook)
   - If you already read whitepaper and yellowpaper, the first three chapter only reviewing knowledge you already have,
-  - chapter 4 and 5 teach about cryptography tools used in ethereum, how to derive private & public key, and learn about wallets technology (nondeterministic, deterministic, best practices).
+  - chapter 4 and 5 teach about cryptography tools used in ethereum, how to derive private & public key, and learn about wallets technology (nondeterministic, deterministic, best practices - Mnemonic code words, based on BIP-39, HD wallets based on BIP-32, Multipurpose HD wallet structure based on BIP-43, Multicurrency and multiaccount wallets based on BIP-44).
