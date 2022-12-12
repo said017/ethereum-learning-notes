@@ -348,7 +348,8 @@ link for reference Iterable mappings etc. : [https://docs.soliditylang.org/en/v0
 
 Advance Solidity
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/4477aae2-fbb6-4787-8ff9-83d159abd76b/Untitled.png)
+![Storage Solidity](https://user-images.githubusercontent.com/19762585/207058678-bb4470ca-ac24-4e9e-9061-65af1b1d95c7.png)
+
 
 ### Style Guide
 
