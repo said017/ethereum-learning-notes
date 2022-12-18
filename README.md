@@ -9,6 +9,7 @@ _This repo are meant to be Proof of my knowledge about Ethereum network, Solidit
   - Learn about blockchain paradigm (mining, protocols etc.), Blocks, State and Transactions, Transaction Execution, Contract Creation, Message Call, Execution Model, Fee Schedule, Virtual Machine Specification.
 
 - [Mastering Ethereum Book](https://github.com/ethereumbook/ethereumbook)
+
   - If you already read whitepaper and yellowpaper, the first three chapter only reviewing knowledge you already have,
   - chapter 4 and 5 teach about cryptography tools used in ethereum, how to derive private & public key, and learn about wallets technology (nondeterministic, deterministic, best practices - Mnemonic code words, based on BIP-39, HD wallets based on BIP-32, Multipurpose HD wallet structure based on BIP-43, Multicurrency and multiaccount wallets based on BIP-44).
   - Chapter 6 explain about Transaction, the structure of it (nonce, gas, gasLimit, gasPrice, from, to , data, value), special creation transaction, how to sign a transaction and verify it, check `03-mastering-ethereum-book/signing-tx.js` to see the code implementation, transaction propagation and recording it on blockchain.
@@ -19,3 +20,9 @@ _This repo are meant to be Proof of my knowledge about Ethereum network, Solidit
   - Chapter 12 explain about DApps, basics example, and explanation about how ENS (Ethereum Name Service) works.
   - Chapter 13 explain about EVM, while upto date information can be found in whitepaper/yellowpaper, the explanation about bytecode compiler, deployment bytcode and runtime bytecode dissambling bytecode using [Ethersplay](https://github.com/crytic/ethersplay) and how transaction processed in bytecode.
   - Chapter 14 explain the broad concept of Consensus, PoW, PoS, read other resource for more upto date information.
+
+- [Secureum Mindmap](https://github.com/x676f64/secureum-mind_map)
+  Since my main goal to learn is to become Solidity Smart Contract Auditor, i follow the guideline in secureum mindmap
+  - Slot 1 is learning the concept of EVM
+  - Slot 2 learn about basics Solidity
+  - Slot 3 learn advance Solidity concepts, common libraries, best practices and DeFi contracts.
