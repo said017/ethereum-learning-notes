@@ -1,4 +1,4 @@
-# 07-Vault
+# 08-Vault
 
 1. `private` modifier does'nt mean your state can't be read by other people. Anyone can read your data by looking at storage data location in your contract.
 
