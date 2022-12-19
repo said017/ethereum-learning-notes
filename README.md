@@ -26,3 +26,5 @@ _This repo are meant to be Proof of my knowledge about Ethereum network, Solidit
   - Slot 1 is learning the concept of EVM
   - Slot 2 learn about basics Solidity
   - Slot 3 learn advance Solidity concepts, common libraries, best practices and DeFi contracts.
+  - Slot 4 Pitfalls and Best Practices 101, common issues that happened but most of them already fixed and not found on recent smart contracts.
+    - Did [Ethernauts](https://ethernaut.openzeppelin.com/) and write down solutions on `ethernauts-solutions`
