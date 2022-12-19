@@ -1,4 +1,4 @@
-# 02-CoinFlip solutions
+# 03-CoinFlip solutions
 
 1. CoinFlip contract require you to guess the output of `flip` function by inputing either `false` or `true`. Then the `flip` function use `block.number-1` to calculate `blockhash` and use it as source of PRNG.
 
