@@ -21,7 +21,7 @@ _This repo are meant to be Proof of my knowledge about Ethereum network, Solidit
   - Chapter 13 explain about EVM, while upto date information can be found in whitepaper/yellowpaper, the explanation about bytecode compiler, deployment bytcode and runtime bytecode dissambling bytecode using [Ethersplay](https://github.com/crytic/ethersplay) and how transaction processed in bytecode.
   - Chapter 14 explain the broad concept of Consensus, PoW, PoS, read other resource for more upto date information.
 
-- [Secureum Mindmap](https://github.com/x676f64/secureum-mind_map)
+- [Secureum Mindmap](https://github.com/x676f64/secureum-mind_map) \
   Since my main goal to learn is to become Solidity Smart Contract Auditor, i follow the guideline in secureum mindmap
   - Slot 1 is learning the concept of EVM
   - Slot 2 learn about basics Solidity
