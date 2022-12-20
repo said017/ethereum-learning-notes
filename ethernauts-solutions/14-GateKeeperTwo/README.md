@@ -11,7 +11,7 @@
     }
 ```
 
-3. Second Modifier, to pass Gate 2’s, we have to somehow pass code size check equal to 0, but we call this via a contract which will result in > 0. to make this contract code size is via `selfdesctruct` but calling it in a function will not call any line of code after that. We have to call the function inside `constructor` since in this initialization stage, the code size is not currently there.
+3. Second Modifier, to pass Gate 2’s, we have to somehow pass code size check equal to 0, but we call this via a contract which will result in > 0. One way to make this contract code size 0 is via `selfdesctruct` but calling it in a function will not call any line of code after that. We have to call the function inside `constructor` since in this initialization stage, the code size is not currently there.
 
 ```solidity
     constructor(address _gateAddress) {
