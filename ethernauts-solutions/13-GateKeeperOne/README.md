@@ -26,9 +26,9 @@
 
 This means that the integer key, when converted into various byte sizes, need to fulfil the following properties:
 
-0x11111111 == 0x1111, which is only possible if the value is masked by 0x0000FFFF
-0x1111111100001111 != 0x00001111, which is only possible if you keep the preceding values, with the mask 0xFFFFFFFF0000FFFF
-Calculate the key using the0xFFFFFFFF0000FFFF mask:
+- 0x11111111 == 0x1111, which is only possible if the value is masked by 0x0000FFFF
+- 0x1111111100001111 != 0x00001111, which is only possible if you keep the preceding values, with the mask 0xFFFFFFFF0000FFFF
+- Calculate the key using the0xFFFFFFFF0000FFFF mask:
 
 ```solidity
     bytes8 _key = bytes8(uint64(uint160(tx.origin))) & 0xFFFFFFFF0000FFFF;
