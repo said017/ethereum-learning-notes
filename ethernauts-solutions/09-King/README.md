@@ -1,4 +1,4 @@
-# 09-Vault
+# 09-King
 
 1. `King.sol` vulnerable to Denial of Service attack, because using `payable(king).transfer(msg.value);` line and require the previous `king` to receive the ETH otherwise it will not be changed.
 

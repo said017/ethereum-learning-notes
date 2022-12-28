@@ -1,4 +1,4 @@
-# 17-Preservation
+# 17-Recovery
 
 1. Contract addresses are deterministic, you can use the following formula to recalculate the address :
 

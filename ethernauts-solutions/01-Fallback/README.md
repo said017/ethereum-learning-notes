@@ -1,6 +1,6 @@
 # 01-Fallback Solutions
 
-The Fallback have `owner` state that iniitialize in `constructor` along with `contributions` mapping of the current `owner` with 1000 ETH value.
+The Fallback have `owner` state that initialize in `constructor` along with `contributions` mapping of the current `owner` with 1000 ETH value.
 
 The goal is to set `owner` to our address and drain contract balance using `withdraw` function.
 
@@ -16,7 +16,7 @@ Solutions :
 contract.contribute({value: 100000000000000})
 ```
 
-2. `receive` function triggered when we send ETH to the contract trough native call/send. We already fulfilled the `contribution` > 0 check, just need to send direct ETH to the contract with `msg.value` > 0.
+2. `receive` function triggered when we send ETH to the contract trough native call/send. We already fulfilled the `contribution` > 0 check, just need to send directly ETH to the contract with `msg.value` > 0.
 
 ```shell
 contract.sendTransaction({value: 10000000000000})
