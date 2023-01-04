@@ -29,4 +29,5 @@ _This repo are meant to be Proof of my knowledge about Ethereum network, Solidit
   - Slot 4 Pitfalls and Best Practices 101, common issues that happened but most of them already fixed and not found on recent smart contracts.
     - Did [Ethernaut](https://ethernaut.openzeppelin.com/) and write down solutions on `ethernauts-solutions`
     - Learn about [Slither](https://github.com/crytic/slither), smart contract static analysis framework, great tools to run pre-defined vulnerabilities, easy to use.
-    - Did [DamnVulnerableDeFi](https://github.com/tinchoabbate/damn-vulnerable-defi) and write solutions.
+  - Slot 5 Pitfalls and Best Practices 201, learn about 10 principles secure design principles and more pitfalls and ERCs.
+  - Did [DamnVulnerableDeFi](https://github.com/said017/ethereum-learning-notes/tree/main/damn-vunerable-defi-solutions) and write solutions.
