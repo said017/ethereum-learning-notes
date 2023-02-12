@@ -37,6 +37,11 @@ _This repo are meant to be Proof of my knowledge about Ethereum network, Solidit
 
 - EVM Knowledge
   deep dive into EVM knowledge, trough these [resources](https://noxx3xxon.notion.site/noxx3xxon/The-EVM-Handbook-bb38e175cc404111a391907c4975426d)
+
   - Learn how EVM bytecode running under the hood (Runtime vs Bytecode), function selector, function wrapper, function bodies, metadata hash. (From Openzepplin - Deconstructing a Solidity Contract)
   - Learn how EVM storage and memory works. (From Noxx - EVM Deep Dives)
   - Solve [Fvictorio - EVM Puzzles](https://github.com/fvictorio/evm-puzzles), my solution availables in [here](https://github.com/said017/ethereum-learning-notes/tree/main/evm-puzzles-solutions)
+
+- DeFi Knowledge
+  learn and take notes from "How To DeFi : Beginner" book by CoinGecko, also deep dive from other resources.
+  - Compound, an Ethereum-based, open-source money market protocol where anyone can lend or borrow cryptocurrencies frictionlessly. Notes available [here](https://github.com/said017/ethereum-learning-notes/tree/main/defi-projects-deep-dive)
