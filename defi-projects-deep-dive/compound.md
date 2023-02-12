@@ -27,27 +27,28 @@ on January 2021, after one year, your 1000 cDAI will now increase in value by 10
 
 Compound allow users to frictionlessly borrow from the protocol, using cTokens as collateral.
 
-**\*\***\*\***\*\***\*\*\*\***\*\***\*\***\*\***Collateral Value**\*\***\*\***\*\***\*\*\*\***\*\***\*\***\*\***
+**Collateral Value**
 
 Assets held by the protocol (represented by ownership of a cToken) are used as collateral to borrow from protocol. each market has collateral factor, ranging from 0 to 1.
 
 The sum of the value of an accounts underlying token balances, multiplied by the collateral factors, equal a user’s **borrowing capacity**.
 
-\***\*\*\*\*\*\*\***\*\*\***\*\*\*\*\*\*\***Why users want to borrow?\***\*\*\*\*\*\*\***\*\*\***\*\*\*\*\*\*\***
+**Why users want to borrow?**
 
 Leveraged Long ETH/or any other token (from 0xMacro Contract Book Club)
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/1bc17faf-1210-48b0-9523-8e3653f390b8/Untitled.png)
+![LongETH](https://user-images.githubusercontent.com/19762585/218304964-04951c55-4c2c-4dba-b364-f53369dd3599.png)
 
 or Short ETH/any other token
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/95fc9ca9-eb3a-4c62-a8db-978fe070729d/Untitled.png)
+![ShortETH](https://user-images.githubusercontent.com/19762585/218304979-d3391c46-d33d-4981-bdfb-0744930faa5b.png)
+
 
 ### Risk & Liquidation
 
 If the value of an account’s borrowing outstanding exceeds their borrowing capacity, a portion of the outstanding borrowing may be repaid in exchange for the user’s cToken collateral, at the current market price minus a **liquidation discount;**
 
-The proportion eligible to be closed, a \***\*\*\*\*\***\*\*\*\*\***\*\*\*\*\***close factor\***\*\*\*\*\***\*\*\*\*\***\*\*\*\*\***, is the portion of the borrowed asset that can be repaid, and ranges from 0 to 1, such as 25%.
+The proportion eligible to be closed, a **close factor**, is the portion of the borrowed asset that can be repaid, and ranges from 0 to 1, such as 25%.
 
 ### Interest Rate Model
 
@@ -79,7 +80,7 @@ $$
 
 The history of each interest rate, for each money market, is captured by an **Interest Rate Index**, which is calculated each time an interest rate changes, resulting from a user minting, redeeming, borrowing, repaying or liquidating the asset.
 
-**\*\***\*\***\*\***\*\***\*\***\*\***\*\***Market Dynamics**\*\***\*\***\*\***\*\***\*\***\*\***\*\***
+**Market Dynamics**
 
 Interest Rate Index for the asset is updated to compound the interest since prior index, using the interest for the period, denominated by r \* t, calculated using a per-block interest rate:
 
@@ -93,7 +94,7 @@ $$
 totalBorrowBalance_{a,n} = totalBorrowBalance_{a,(n-1)} * (1+r*t)
 $$
 
-And a portion of the accrued interest is retained (set aside) as reservers, determined by a \***\*\*\*\*\*\*\***\*\*\*\*\***\*\*\*\*\*\*\***reserveFactor,\***\*\*\*\*\*\*\***\*\*\*\*\***\*\*\*\*\*\*\*** ranging from 0 to 1 :
+And a portion of the accrued interest is retained (set aside) as reservers, determined by a **reserveFactor,** ranging from 0 to 1 :
 
 $$
 reserves_a = reserves_{a,(n-1)} + totalBorrowBalance_{a,(n-1)} * (r * t * reserveFactor)
