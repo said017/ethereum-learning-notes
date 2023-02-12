@@ -23,11 +23,20 @@ _This repo are meant to be Proof of my knowledge about Ethereum network, Solidit
 
 - [Secureum Mindmap](https://github.com/x676f64/secureum-mind_map) \
   Since my main goal to learn is to become Solidity Smart Contract Auditor, i follow the guideline in secureum mindmap
+
   - Slot 1 is learning the concept of EVM
   - Slot 2 learn about basics Solidity
   - Slot 3 learn advance Solidity concepts, common libraries, best practices and DeFi contracts.
   - Slot 4 Pitfalls and Best Practices 101, common issues that happened but most of them already fixed and not found on recent smart contracts.
     - Did [Ethernaut](https://ethernaut.openzeppelin.com/) and write down solutions on `ethernauts-solutions`
     - Learn about [Slither](https://github.com/crytic/slither), smart contract static analysis framework, great tools to run pre-defined vulnerabilities, easy to use.
-  - Slot 5 Pitfalls and Best Practices 201, learn about 10 principles secure design principles and more pitfalls and ERCs.
+  - Slot 5 Pitfalls and Best Practices 201, learn about 10 secure design principles and more pitfalls and ERC standards.
   - Did [DamnVulnerableDeFi](https://github.com/said017/ethereum-learning-notes/tree/main/damn-vunerable-defi-solutions) and write solutions.
+  - Slot 6 Audit Techniques & Tools 101, learn about the goal, the non-goal of audit, targets, needs, types, timeline, effort, pre-reqs, limitations, reports, classification, OWASP difficulty and impact, checklist, analysis techniques, specification, documentation, testing, formal verification, manual analysis. The detailed list available on `slot-6-audit-techniques-notes.md`.
+  - Slot 6 also mention about manual review approach, detail on `slot-6-manual-review-approach.md`, and the typical audit process on `slot-6-audit-process.md`.
+
+- EVM Knowledge
+  deep dive into EVM knowledge, trough these [resources](https://noxx3xxon.notion.site/noxx3xxon/The-EVM-Handbook-bb38e175cc404111a391907c4975426d)
+  - Learn how EVM bytecode running under the hood (Runtime vs Bytecode), function selector, function wrapper, function bodies, metadata hash. (From Openzepplin - Deconstructing a Solidity Contract)
+  - Learn how EVM storage and memory works. (From Noxx - EVM Deep Dives)
+  - Solve [Fvictorio - EVM Puzzles](https://github.com/fvictorio/evm-puzzles), my solution availables in [here](https://github.com/said017/ethereum-learning-notes/tree/main/evm-puzzles-solutions)
