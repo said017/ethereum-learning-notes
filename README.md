@@ -44,4 +44,5 @@ _This repo are meant to be Proof of my knowledge about Ethereum network, Solidit
 
 - DeFi Knowledge
   learn and take notes from "How To DeFi : Beginner" book by CoinGecko, also deep dive from other resources.
-  - Compound, an Ethereum-based, open-source money market protocol where anyone can lend or borrow cryptocurrencies frictionlessly. Notes available [here](https://github.com/said017/ethereum-learning-notes/tree/main/defi-projects-deep-dive)
+  - Compound protocol, an Ethereum-based, open-source money market protocol where anyone can lend or borrow cryptocurrencies frictionlessly. Notes available [here](https://github.com/said017/ethereum-learning-notes/tree/main/defi-projects-deep-dive).
+  - create Compound protocol supplying and redeem example using foundry [here](https://github.com/said017/defi-examples/blob/main/test/CompoundErc20.t.sol).
