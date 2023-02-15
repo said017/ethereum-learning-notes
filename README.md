@@ -47,4 +47,5 @@ _This repo are meant to be Proof of my knowledge about Ethereum network, Solidit
   - Compound protocol, an Ethereum-based, open-source money market protocol where anyone can lend or borrow cryptocurrencies frictionlessly. Notes available [here](https://github.com/said017/ethereum-learning-notes/tree/main/defi-projects-deep-dive).
   - create Compound protocol supplying and redeem example using foundry [here](https://github.com/said017/defi-examples/blob/main/test/CompoundErc20.t.sol).
   - create Compound protocol borrow and repay example using foundry [here](https://github.com/said017/defi-examples/blob/main/test/CompoundErc20Borrow.t.sol).
-  - Learn about Uniswap V1,V2 from [here](https://uniswapv3book.com/).
+  - Learn about Uniswap V1,V2 from [here](https://uniswapv3book.com/). V1 is decentralized DEX using AMM and pool providing exchange from ETH to Token, V2 improve a lot of aspect of V1, but the main thing is efficient exchange for Token to Token.
+  - Learn about Uniswap V3 from [here](https://uniswapv3book.com/)
