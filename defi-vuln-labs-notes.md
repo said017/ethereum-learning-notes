@@ -29,7 +29,7 @@
 - **ReadOnlyReentrancy.sol,** the advance and recent version of reentrancy attack, call another contract that can manipulate read value result, before actually calling the contract that depend on that read value result.
 - Below is ilustration from this [https://www.youtube.com/watch?v=0fgGTRlsDxI](https://www.youtube.com/watch?v=0fgGTRlsDxI) video :
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/395117cc-f05f-4717-aada-2e963ab6fa28/Untitled.png)
+![image](https://user-images.githubusercontent.com/19762585/220131405-9541b54d-958a-4283-8131-f686a36cca87.png)
 
 - But why “get_virtual_price()” is returning different value under this condition? When we call “remove_liquidity”, it burn LP token equal to the amount, then send the calculated ether value to the recipient, but if the recipient is contract, it will trigger its fallback function. **During the execution of the fallback, not all tokens have been sent (balances not fully updated) while the total supply of the LP token has already decreased.**
 
