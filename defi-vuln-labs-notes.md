@@ -1,4 +1,4 @@
-# DamnVulnLabs
+# DeFiVulnLabs
 
 ## Integer Overflow
 
@@ -23,3 +23,34 @@
 
 - **Reentrancy.sol,** this is the basic form of reentrancy attack, function that have external interaction but doesn’t do CEI (Checks, Effects, Interactions) most likely would vulnerable to this attack, in this scenario, the “withdrawFunds” function can be called, and when ether is transferred trough “call”, the balances is not updated yet, thus the attacker can call “withdrawFunds” again using contract fallback() payable function to drain until the funds is zero in the contract.
 - To mitigate, always use CEI or use lock/noReentranct modifier as provided in example
+
+## Read-Only Reentrancy
+
+- **ReadOnlyReentrancy.sol,** the advance and recent version of reentrancy attack, call another contract that can manipulate read value result, before actually calling the contract that depend on that read value result.
+- Below is ilustration from this [https://www.youtube.com/watch?v=0fgGTRlsDxI](https://www.youtube.com/watch?v=0fgGTRlsDxI) video :
+
+![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/395117cc-f05f-4717-aada-2e963ab6fa28/Untitled.png)
+
+- But why “get_virtual_price()” is returning different value under this condition? When we call “remove_liquidity”, it burn LP token equal to the amount, then send the calculated ether value to the recipient, but if the recipient is contract, it will trigger its fallback function. **During the execution of the fallback, not all tokens have been sent (balances not fully updated) while the total supply of the LP token has already decreased.**
+
+## ERC777 Callbacks and Reentrancy
+
+- This Reentrancy happened because of the callback implementations available in ERC777 where `ERC777TokensSender` and `ERC777TokensRecipient` will be called if the contract/address implement the callback standard interface.
+- Malicious contract addresses may cause reentrancy on such callbacks if reentrancy guards are not used.
+
+## Unchecked and Unsafe External Call
+
+- using arbitrary call is a bad practice, since it can call function from contract and can be malicious.
+
+## Private Data
+
+- `private` doesn't mean the data is not readable or secure.
+- anyone can read any data from blockchain by seeing it trough the contract data slot, sensitive data is not recommended to be saved on blockchain.
+
+## Unprotected Callback - NFT \_safeMint
+
+- NFT \_safeMint is not guarantee any safe call, because the function have onERC721Received that can be used to reenter the call if not prevented properly.
+
+## Backdoor Assembly
+
+- Beware of inline assembly call in the smart contract that can change any storage slot to arbitrary value.
