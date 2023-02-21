@@ -54,3 +54,32 @@
 ## Backdoor Assembly
 
 - Beware of inline assembly call in the smart contract that can change any storage slot to arbitrary value.
+
+## Bypasscontract
+
+- isContract check in a function should not rely on code size of the caller, since if the contract called inside constructor of the attacker contract, the returned size is still zero
+- combine it with using `tx.origin==msg.sender`
+
+## DOS
+
+- Contract external calls can fail deliberately by malicious contract that designed to not accept any ether, this could lead to DOS if state of the system rely on the call need to be success.
+- Mitigated by using separate function to call the withdraw and altering game/system state.
+
+## Randomness
+
+- using `block.number` and `block.timestamp` for random source is not reliable since any call in the same block will reproduce the same number.
+- Use reliable oracle for source of randomness
+
+## Visibility
+
+- This may seems like a stupid mistake, but not setting up proper visibility caused some project a lot of money
+- Always check multiple times to make sure every function have proper visibility
+
+## TXOrigin
+
+- Never use `tx.origin` for caller verification, since it is very susceptible to phishing attack. user can be tricked to call a contract that lead to call another critical function that could lead to lost of funds.
+- Use `msg.sender` instead.
+
+## Uninitialized Contract Variables
+
+- This can commonly seen on UUPS implementation, local storage variables are not initialized could causing unintended or malicious behaviors.
