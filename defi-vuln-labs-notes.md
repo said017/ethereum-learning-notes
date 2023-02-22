@@ -100,7 +100,7 @@
 
 - Referencing data using incorrect data location could lead to unintended behavior. If want to persist, use `storage`.
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/afd9f86f-bc17-4d60-8f88-fef6a69c302f/Untitled.png)
+![image](https://user-images.githubusercontent.com/19762585/220502872-10f04cc7-ce3e-42e3-b409-69c538541026.png)
 
 ## Dirty Bytes
 
