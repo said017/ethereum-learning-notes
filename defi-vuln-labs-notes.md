@@ -83,3 +83,41 @@
 ## Uninitialized Contract Variables
 
 - This can commonly seen on UUPS implementation, local storage variables are not initialized could causing unintended or malicious behaviors.
+
+## Storage Collision
+
+- Again, happened usually on upgradable contract, unmatched storage slot between proxy and implementation could lead to unintended behavior.
+
+## Approval Scam
+
+- Be wary of any website asking for token approval, it could lead to lost of funds
+
+## Signature Replay
+
+- If not protected signature of the same transaction can be used again for others
+
+## Data Location - Storage vs Memory
+
+- Referencing data using incorrect data location could lead to unintended behavior. If want to persist, use `storage`.
+
+![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/afd9f86f-bc17-4d60-8f88-fef6a69c302f/Untitled.png)
+
+## Dirty Bytes
+
+- copying `bytes`arrays from memory or calldata to storage may result in dirty storage values.
+
+## Invariants
+
+- Assert is used to check invariants. Those are states our contract or variables should never reach, ever. For example, if we decrease a value then it should never get bigger, only smaller.
+
+## NFT Mint Exposed Metadata
+
+- Exposed metadata during minting could lead to attacker can find out valuable NFTs and then target mint of specific NFTs by monitoring mempool and sell the NFTs for a profit in secondary market
+
+## Divmultiply
+
+- Solidity doesn’t have decimal precision, so it is generally better to do multiplication before division to avoid unintended rounding.
+
+## Unchecked Return Value
+
+- Some token like (USDT) doesn’t implement ERC20 standard, and behave differently like not returning void instead of value if transfer is successful. Calling these functions with the correct EIP20 function signatures will always revert.
