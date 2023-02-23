@@ -121,3 +121,13 @@
 ## Unchecked Return Value
 
 - Some token like (USDT) doesn’t implement ERC20 standard, and behave differently like not returning void instead of value if transfer is successful. Calling these functions with the correct EIP20 function signatures will always revert.
+
+## **20220714 Sherlock Yield Strategy Bug - Cross-protocol Reentrancy**
+
+- Advance attack involving Euler and 1inch protocol, manipulating the output of [EulerStrategy.balanceOf()](https://github.com/sherlock-protocol/sherlock-v2-core/blob/87bd2d827217cf7cf1fe9a2758c374ffee7d3908/contracts/strategy/EulerStrategy.sol#L46) (which uses the result of the `balanceOfUnderlying()`
+   call on Euler's `eUSDC`contract) by doing Euler 1inch swap function.
+- This attack probably can be categorized as read-only reentrancy where the output of read/view can be manipulated in unintended state condition.
+
+## **20220623 Sense Finance - Access control**
+
+- Missing access control on `onSwap` function lead to malicious attacker can provide and manipulate data to oracle used by the protocol.
