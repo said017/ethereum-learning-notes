@@ -131,3 +131,11 @@
 ## **20220623 Sense Finance - Access control**
 
 - Missing access control on `onSwap` function lead to malicious attacker can provide and manipulate data to oracle used by the protocol.
+
+## [Immunefi #spotthebugchallenge 1](https://github.com/SunWeb3Sec/DeFiVulnLabs/blob/main/src/test/Immunefi_ch1.sol)
+
+- Incorrect use of msg.value in loop causing anyone can mint any number of NFTs with only providing 1 NFT price.
+
+## • [Immunefi #spotthebugchallenge 2](https://github.com/SunWeb3Sec/DeFiVulnLabs/blob/main/src/test/Immunefi_ch2.sol)
+
+- Storage collision happened because `_IMPLEMENTATION_SLOT` slot variable is not a constant.
