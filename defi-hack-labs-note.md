@@ -12,3 +12,13 @@ Following the figure, ETH price is the external data. The smart contract obtains
 We know the formula x \* y = k in a typical AMM. x ( ETH price in this case) = k / y.
 
 So we take a look at the Uniswap V2 WETH/USDC trading pair contract. At this address 0xb4e16d0168e52d35cacd2c6185b44281ec28c9dc.
+
+At the time of publication we see the following reserve values:
+
+WETH: 33,906.6145928 USDC: 42,346,768.252804
+
+Formula: Applying the x \* y = k formula will yield the price for each ETH:
+
+42,346,768.252804 / 33,906.6145928 = 1248.9235
+
+(Market prices may differ from the calculated price by a few cents. In most cases, this refers to a trading fee or a new transaction that affects the pool. This variance can be skimmed with skim()1.)
