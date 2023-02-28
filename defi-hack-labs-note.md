@@ -22,3 +22,17 @@ Formula: Applying the x \* y = k formula will yield the price for each ETH:
 42,346,768.252804 / 33,906.6145928 = 1248.9235
 
 (Market prices may differ from the calculated price by a few cents. In most cases, this refers to a trading fee or a new transaction that affects the pool. This variance can be skimmed with skim()1.)
+
+Oracle Price Manipulation Attack Modes
+Most common attack modes:
+
+Alter the oracle address
+
+Root cause: lack of verification mechanism
+For example: Rikkei Finance
+Through flash loans, an attacker can drain liquidity, resulting in wrong pricing information in an oracle.
+
+This is most often seen in attackers calling these functions. GetPrice、Swap、StackingReward, Transfer(with burn fee), etc.
+Root cause: Protocols using unsafe/compromised oracles, or the oracle did not implement time-weighted average price features.
+Example: One Ring Finance
+Protip-case 2: During code review ensure the functionbalanceOf()is well guarded.
