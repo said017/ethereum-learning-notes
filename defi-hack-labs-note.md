@@ -36,3 +36,5 @@ This is most often seen in attackers calling these functions. GetPrice、Swap、
 Root cause: Protocols using unsafe/compromised oracles, or the oracle did not implement time-weighted average price features.
 Example: One Ring Finance
 Protip-case 2: During code review ensure the functionbalanceOf()is well guarded.
+
+DONE READING ABOUT DEFI HACK ORACLE EXAMPLES
