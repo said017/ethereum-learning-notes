@@ -55,3 +55,4 @@ _This repo are meant to be Proof of my knowledge about Ethereum network, Solidit
   - start to deep dive into 101 root cause analysis of past DeFi hacks notion page.
 
 - Start Practice Audit from Solidity Lab
+  - Auditing contract based on [ERC1726](https://github.com/Roger-Wu/erc1726-dividend-paying-token).
