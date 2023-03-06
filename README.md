@@ -59,3 +59,4 @@ _This repo are meant to be Proof of my knowledge about Ethereum network, Solidit
   - Auditing contract based on [ERC1726](https://github.com/Roger-Wu/erc1726-dividend-paying-token).
 
 - Reading trough [solcurity](https://github.com/transmissions11/solcurity).
+- Start participating in Sherlock contest.
