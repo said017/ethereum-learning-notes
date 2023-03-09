@@ -8,3 +8,5 @@ Currently, smart contract values such as pricing and configuration cannot update
 DONE READING ABOUT DEFI HACK ORACLE EXAMPLES - In this Case EGDAttack, use FlashLoan and Oracle Manipulation to benefit from claiming protocol rewards.
 
 DONE READING ABOUT MEV BOT ATTACK EXAMPLES - In this case, the attacker decompile closed code of MEV BOT, and found vunlerability, then design attack abusing the vunerability, in this case unprotected pancakeCall callback receiver. additional read : https://noxx.substack.com/p/flashbots-kings-of-the-mempool?utm_source=profile&utm_medium=reader2
+
+DONE READING ABOUT RUGPULL EXAMPLES - In this case, hiding rugpull functionality in hidden libraries.
