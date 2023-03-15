@@ -63,4 +63,4 @@ _This repo are meant to be Proof of my knowledge about Ethereum network, Solidit
 - Check resources from [Web3DAO](https://www.web3securitydao.xyz/collaborating/resources).
 - Read Smart Contract Security Verification Standard [here](https://github.com/ComposableSecurity/SCSVS).
 - Read trough QuillAudit [Roadmap](https://github.com/Quillhash/QuillAudit_Auditor_Roadmap).
-- Learn invariant testing using Foundry.
+- Learn invariant testing using Foundry from [this article](https://mirror.xyz/horsefacts.eth/Jex2YVaO65dda6zEyfM_-DXlXhOWCAoSpOx5PLocYgw).
