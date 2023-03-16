@@ -59,7 +59,7 @@ _This repo are meant to be Proof of my knowledge about Ethereum network, Solidit
   - Auditing contract based on [ERC1726](https://github.com/Roger-Wu/erc1726-dividend-paying-token).
 
 - Reading trough [solcurity](https://github.com/transmissions11/solcurity).
-- Start participating in Sherlock contest.
+- Start participating in Sherlock contest and submit high and medium issues.
 - Check resources from [Web3DAO](https://www.web3securitydao.xyz/collaborating/resources).
 - Read Smart Contract Security Verification Standard [here](https://github.com/ComposableSecurity/SCSVS).
 - Read trough QuillAudit [Roadmap](https://github.com/Quillhash/QuillAudit_Auditor_Roadmap).
