@@ -57,6 +57,7 @@ _This repo are meant to be Proof of my knowledge about Ethereum network, Solidit
 - Start Practice Audit from Solidity Lab
 
   - Auditing contract based on [ERC1726](https://github.com/Roger-Wu/erc1726-dividend-paying-token).
+  - Start practice audit - Diva Protocol.
 
 - Reading trough [solcurity](https://github.com/transmissions11/solcurity).
 - Start participating in Sherlock contest and submit high and medium issues.
@@ -65,4 +66,5 @@ _This repo are meant to be Proof of my knowledge about Ethereum network, Solidit
 - Read trough QuillAudit [Roadmap](https://github.com/Quillhash/QuillAudit_Auditor_Roadmap).
 - Learn invariant testing using Foundry from [this article](https://mirror.xyz/horsefacts.eth/Jex2YVaO65dda6zEyfM_-DXlXhOWCAoSpOx5PLocYgw).
 - Reading C4 and Sherlock audit report.
-- Start practice audit - Diva Protocol.
+  - 2022-04-backd
+  - 2022-08-olympus
