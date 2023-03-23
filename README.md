@@ -60,7 +60,9 @@ _This repo are meant to be Proof of my knowledge about Ethereum network, Solidit
   - Start practice audit - Diva Protocol.
 
 - Reading trough [solcurity](https://github.com/transmissions11/solcurity).
-- Start participating in Sherlock contest and submit high and medium issues.
+- Start participating in Sherlock contest :
+  - submit high and medium issues - Derby Protocol contest.
+  - ongoing audit Kairos Protocol contest.
 - Check resources from [Web3DAO](https://www.web3securitydao.xyz/collaborating/resources).
 - Read Smart Contract Security Verification Standard [here](https://github.com/ComposableSecurity/SCSVS).
 - Read trough QuillAudit [Roadmap](https://github.com/Quillhash/QuillAudit_Auditor_Roadmap).
