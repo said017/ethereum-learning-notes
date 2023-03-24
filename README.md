@@ -62,7 +62,7 @@ _This repo are meant to be Proof of my knowledge about Ethereum network, Solidit
 - Reading trough [solcurity](https://github.com/transmissions11/solcurity).
 - Start participating in Sherlock contest :
   - submit high and medium issues - Derby Protocol contest.
-  - ongoing audit Kairos Protocol contest.
+  - ongoing audit Kairos Protocol contest (4 medium).
 - Check resources from [Web3DAO](https://www.web3securitydao.xyz/collaborating/resources).
 - Read Smart Contract Security Verification Standard [here](https://github.com/ComposableSecurity/SCSVS).
 - Read trough QuillAudit [Roadmap](https://github.com/Quillhash/QuillAudit_Auditor_Roadmap).
