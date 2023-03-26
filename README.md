@@ -72,3 +72,4 @@ _This repo are meant to be Proof of my knowledge about Ethereum network, Solidit
   - 2022-08-olympus
   - 2022-09-party-dao
   - 2022-09-y2k-finance
+- Looking through Immunefi projects.
