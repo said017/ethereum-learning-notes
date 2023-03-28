@@ -73,4 +73,5 @@ _This repo are meant to be Proof of my knowledge about Ethereum network, Solidit
   - 2022-09-party-dao
   - 2022-09-y2k-finance
   - 2022-12-notional
+  - 2022-09-notional
 - Looking through Immunefi projects.
